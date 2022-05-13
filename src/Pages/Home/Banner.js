@@ -5,7 +5,12 @@ const Banner = () => {
   return (
     <div className=" hero min-h-screen bg-[url('/src/assets/images/bg.png')] px-12">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <img src={chair} className="max-w-sm rounded-lg shadow-2xl" />
+        <div>
+          <img
+            src={chair}
+            className="min-w-sm lg:max-w-sm rounded-lg shadow-2xl"
+          />
+        </div>
         <div>
           <h1 className="text-5xl font-bold">Your New Smile Starts Here</h1>
           <p className="py-6">
@@ -13,7 +18,7 @@ const Banner = () => {
             excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
             a id nisi.
           </p>
-          <PrimaryButton> Get Started</PrimaryButton>
+          <PrimaryButton>Get Started</PrimaryButton>
         </div>
       </div>
     </div>
