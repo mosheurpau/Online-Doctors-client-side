@@ -4,6 +4,7 @@ import cavity from "../../assets/images/cavity.png";
 import whitening from "../../assets/images/whitening.png";
 import Service from "./Service";
 import treatment from "../../assets/images/treatment.png";
+import PrimaryButton from "../Shared/PrimaryButton";
 
 const Services = () => {
   const services = [
@@ -49,9 +50,7 @@ const Services = () => {
               excepturi exercitationem quasi. In deleniti eaque aut repudiandae
               et a id nisi.
             </p>
-            <button class="btn bg-gradient-to-r from-secondary to-primary text-white border-0">
-              Get Started
-            </button>
+            <PrimaryButton>Get Started</PrimaryButton>
           </div>
         </div>
       </div>
