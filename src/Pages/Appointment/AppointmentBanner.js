@@ -15,7 +15,7 @@ const AppointmentBanner = ({ date, setDate }) => {
       <div class="hero-content flex-col lg:flex-row-reverse">
         <img
           src={chair}
-          class="max-w-sm rounded-lg shadow-2xl"
+          class="min-w-sm lg:max-w-sm rounded-lg shadow-2xl"
           alt="Dentist Chair"
         />
         <div>
