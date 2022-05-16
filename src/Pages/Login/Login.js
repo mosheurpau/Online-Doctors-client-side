@@ -1,5 +1,6 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
+  useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
   useSignInWithGoogle,
 } from "react-firebase-hooks/auth";
@@ -127,9 +128,17 @@ const Login = () => {
           </form>
           <p>
             <small>
-              New to Doctors Portal{" "}
+              New to Doctors Portal?{" "}
               <Link className="text-primary" to="/signup">
                 Create New Account
+              </Link>
+            </small>
+          </p>
+          <p>
+            <small>
+              Forget Password?{" "}
+              <Link className="text-primary" to="/reset">
+                Reset Password
               </Link>
             </small>
           </p>
