@@ -9,6 +9,7 @@ const Banner = () => {
           <img
             src={chair}
             className="min-w-sm lg:max-w-sm rounded-lg shadow-2xl"
+            alt="Banner"
           />
         </div>
         <div>
