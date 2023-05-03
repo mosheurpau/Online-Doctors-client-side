@@ -37,7 +37,7 @@ const Contact = () => {
           <input
             type="submit"
             value="Submit"
-            className="text-white font-bold py-2 px-5 rounded mt-5 mb-10 normal-case bg-gradient-to-r from-secondary to-primary"
+            className="text-white font-bold py-2 px-5 rounded mt-5 mb-10 normal-case bg-gradient-to-r from-secondary to-primary w-full max-w-xs"
           />
         </div>
       </div>

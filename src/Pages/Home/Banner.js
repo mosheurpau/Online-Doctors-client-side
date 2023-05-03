@@ -1,5 +1,5 @@
 import React from "react";
-import chair from "../../assets/images/chair.png";
+import doctors from "../../assets/images/doctors.png";
 import PrimaryButton from "../Shared/PrimaryButton";
 const Banner = () => {
   return (
@@ -7,19 +7,24 @@ const Banner = () => {
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div>
           <img
-            src={chair}
+            src={doctors}
             className="min-w-sm lg:max-w-sm rounded-lg shadow-2xl"
             alt="Banner"
           />
         </div>
         <div>
-          <h1 className="text-5xl font-bold">Your New Smile Starts Here</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
+          <h1 className="text-5xl font-bold text-white">
+            Find The Best Doctor Near By You.
+          </h1>
+          <p className="py-6 text-white">
+            Online doctor appointments allow patients to consult with a doctor
+            remotely through video calls, phone calls, or messaging platforms.
+            They offer convenience, cost savings, and increased accessibility,
+            particularly for patients in rural or remote areas.
           </p>
-          <PrimaryButton>Get Started</PrimaryButton>
+          <a href="http://localhost:3000/appointment">
+            <PrimaryButton>FIND A DOCTOR</PrimaryButton>
+          </a>
         </div>
       </div>
     </div>

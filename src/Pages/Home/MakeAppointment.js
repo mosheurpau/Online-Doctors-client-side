@@ -18,14 +18,17 @@ const MakeAppointment = () => {
         <h3 className="text-xl text-primary font-bold mb-5">Appointment</h3>
         <h2 className="text-3xl text-white mb-5">Make an Appointment Today</h2>
         <p className="text-white mb-5">
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsumis that it has a more-or-less normal distribution of
-          letters,as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page
+          Make an appointment today to receive quality medical care,
+          personalized attention, and expert advice from licensed healthcare
+          professionals. With convenient online booking and flexible scheduling
+          options, you can choose a time and date that works best for you, and
+          receive care from the comfort of your own home. Don't wait to
+          prioritize your health – book an appointment now and take the first
+          step towards wellness.
         </p>
-        <PrimaryButton>Get Started</PrimaryButton>
+        <a href="http://localhost:3000/appointment">
+          <PrimaryButton>Get Started</PrimaryButton>
+        </a>
       </div>
     </section>
   );

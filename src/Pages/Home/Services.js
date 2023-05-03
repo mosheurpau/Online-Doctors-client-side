@@ -1,7 +1,7 @@
 import React from "react";
-import fluoride from "../../assets/images/fluoride.png";
-import cavity from "../../assets/images/cavity.png";
-import whitening from "../../assets/images/whitening.png";
+import therapiya from "../../assets/images/therapiya.png";
+import dentistry from "../../assets/images/dentistry.png";
+import virusology from "../../assets/images/virusology.png";
 import Service from "./Service";
 import treatment from "../../assets/images/treatment.png";
 import PrimaryButton from "../Shared/PrimaryButton";
@@ -10,21 +10,24 @@ const Services = () => {
   const services = [
     {
       _id: 1,
-      name: "Fluoride Treatment",
-      description: "",
-      img: fluoride,
+      name: "Therapiya",
+      description:
+        "Therapiya is an online therapy service providing mental health support through video and phone sessions with licensed therapists, specializing in treatment for anxiety, depression, and stress.",
+      img: therapiya,
     },
     {
       _id: 2,
-      name: "Cavity Filling",
-      description: "",
-      img: cavity,
+      name: "Dentistry",
+      description:
+        "Online dentistry services offer dental consultations, assessments, and advice through video or phone calls, as well as home dental kits, providing convenient and accessible options for patients unable to visit a dental clinic in person.",
+      img: dentistry,
     },
     {
       _id: 3,
-      name: "Teeth Whitening",
-      description: "",
-      img: whitening,
+      name: "Virusology",
+      description:
+        "Virology services online provide expert analysis and consultation for viral infections, including COVID-19, through telemedicine platforms, offering convenient and accessible options for diagnosis, treatment, and outbreak control.",
+      img: virusology,
     },
   ];
   return (
@@ -49,15 +52,33 @@ const Services = () => {
             className="min-w-sm lg:max-w-sm rounded-lg shadow-2xl"
           />
           <div>
-            <h1 className="text-2xl lg:text-5xl  font-bold">
-              Box Office News!
+            <h1 className="text-2xl lg:text-4xl font-bold pb-5">
+              Why Choose Online Doctors Clinic?
             </h1>
-            <p>
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
+            <p className="text-justify">
+              Choosing an online doctor's clinic offers convenience,
+              accessibility, cost savings, and reduced exposure to contagious
+              illnesses, allowing patients to receive medical advice,
+              prescriptions, and referrals from licensed healthcare providers at
+              home.
             </p>
-            <PrimaryButton>Get Started</PrimaryButton>
+            <h3 className="text-xl font-bold pt-3">+ Quality Control System</h3>
+            <p className="text-justify">
+              A quality control system ensures that products or services meet
+              customer expectations and comply with regulations through
+              established procedures and guidelines.
+            </p>
+            <h3 className="text-xl font-bold pt-3">
+              + Highly Professional Staff
+            </h3>
+            <p className="pb-3 text-justify">
+              Highly professional staff are skilled, experienced, and committed
+              individuals who provide exceptional service to customers or
+              clients.
+            </p>
+            <a href="http://localhost:3000/appointment">
+              <PrimaryButton>Get Started</PrimaryButton>
+            </a>
           </div>
         </div>
       </div>
