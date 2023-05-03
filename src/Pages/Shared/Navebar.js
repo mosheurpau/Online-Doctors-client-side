@@ -72,7 +72,11 @@ const Navbar = () => {
           </ul>
         </div>
         <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Online Doctors
+          <img
+            className="p-1 m-0 h-12"
+            src="https://i.ibb.co/WGcmqkS/online-doctor.png"
+            alt="Online Doctors"
+          />
         </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
