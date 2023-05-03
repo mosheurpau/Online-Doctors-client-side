@@ -26,7 +26,7 @@ const MakeAppointment = () => {
           prioritize your health – book an appointment now and take the first
           step towards wellness.
         </p>
-        <a href="http://localhost:3000/appointment">
+        <a href="https://mosheur-online-doctors-server-side.onrender.com/appointment">
           <PrimaryButton>Get Started</PrimaryButton>
         </a>
       </div>

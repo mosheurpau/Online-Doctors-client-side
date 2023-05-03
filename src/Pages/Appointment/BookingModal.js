@@ -23,7 +23,7 @@ const BookingModal = ({ date, treatment, setTreatment, refetch }) => {
       phone: event.target.phone.value,
     };
 
-    fetch("http://localhost:5000/booking", {
+    fetch("https://mosheur-online-doctors-server-side.onrender.com/booking", {
       method: "POST",
       headers: {
         "content-type": "application/json",

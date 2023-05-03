@@ -13,7 +13,9 @@ const AddDoctor = () => {
   } = useForm();
 
   const { data: services, isLoading } = useQuery("services", () =>
-    fetch("http://localhost:5000/service").then((res) => res.json())
+    fetch(
+      "https://mosheur-online-doctors-server-side.onrender.com/service"
+    ).then((res) => res.json())
   );
 
   const imageStorageKey = "8a2fd622b09fe164cd5a3cd0097a5b35";
@@ -47,14 +49,17 @@ const AddDoctor = () => {
             img: img,
           };
           // send to your database
-          fetch("http://localhost:5000/doctor", {
-            method: "POST",
-            headers: {
-              "content-type": "application/json",
-              authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-            },
-            body: JSON.stringify(doctor),
-          })
+          fetch(
+            "https://mosheur-online-doctors-server-side.onrender.com/doctor",
+            {
+              method: "POST",
+              headers: {
+                "content-type": "application/json",
+                authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+              },
+              body: JSON.stringify(doctor),
+            }
+          )
             .then((res) => res.json())
             .then((inserted) => {
               if (inserted.insertedId) {

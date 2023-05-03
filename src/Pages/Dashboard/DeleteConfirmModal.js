@@ -4,12 +4,15 @@ import { toast } from "react-toastify";
 const DeleteConfirmModal = ({ deletingDoctor, refetch, setDeletingDoctor }) => {
   const { name, email } = deletingDoctor;
   const handleDelete = () => {
-    fetch(`http://localhost:5000/doctor/${email}`, {
-      method: "DELETE",
-      headers: {
-        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
-      },
-    })
+    fetch(
+      `https://mosheur-online-doctors-server-side.onrender.com/doctor/${email}`,
+      {
+        method: "DELETE",
+        headers: {
+          authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+        },
+      }
+    )
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

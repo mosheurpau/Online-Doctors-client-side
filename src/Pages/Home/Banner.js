@@ -22,7 +22,7 @@ const Banner = () => {
             They offer convenience, cost savings, and increased accessibility,
             particularly for patients in rural or remote areas.
           </p>
-          <a href="http://localhost:3000/appointment">
+          <a href="https://mosheur-online-doctors-server-side.onrender.com/appointment">
             <PrimaryButton>FIND A DOCTOR</PrimaryButton>
           </a>
         </div>
