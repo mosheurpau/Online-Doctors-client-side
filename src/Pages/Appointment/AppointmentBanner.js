@@ -18,7 +18,7 @@ const AppointmentBanner = ({ date, setDate }) => {
           className="min-w-sm lg:max-w-sm rounded-lg shadow-2xl"
           alt="Our doctors"
         />
-        <div>
+        <div className="text-cyan-50">
           <DayPicker mode="single" selected={date} onSelect={setDate} />
         </div>
       </div>

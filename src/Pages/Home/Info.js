@@ -1,7 +1,7 @@
 import React from "react";
 import InfoCard from "./InfoCard";
 import clock from "../../assets/icons/clock.svg";
-import marker from "../../assets/icons/marker.svg";
+import marker from "../../assets/icons/mmarker.svg";
 import phone from "../../assets/icons/phone.svg";
 
 const Info = () => {
@@ -14,7 +14,8 @@ const Info = () => {
       ></InfoCard>
       <InfoCard
         cardTitle="Our Locations"
-        bgClass="bg-[#3A4256]"
+        // bgClass="bg-[#3A4256]"
+        bgClass="bg-gradient-to-r from-secondary to-primary"
         img={marker}
       ></InfoCard>
       <InfoCard
