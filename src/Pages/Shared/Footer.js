@@ -1,16 +1,26 @@
-import React from "react";
-import footer from "../../assets/images/footer.png";
+import React, { useEffect, useState } from "react";
+import { useSpring, animated } from "react-spring";
 
 const Footer = () => {
+  const [colorIndex, setColorIndex] = useState(0);
+  const colors = ["#21201C", "#2C2B29", "#19D3AE", "#3A4256", "#3d4451"];
+
+  const springProps = useSpring({
+    backgroundColor: colors[colorIndex],
+    padding: "20px",
+    textAlign: "center",
+  });
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setColorIndex((colorIndex + 1) % colors.length);
+    }, 2000);
+    return () => clearInterval(intervalId);
+  }, [colorIndex, colors.length]);
+
   return (
-    <footer
-      style={{
-        background: `url(${footer})`,
-        backgroundSize: "cover",
-      }}
-      className="p-10"
-    >
-      <div className="footer px-12">
+    <animated.footer style={springProps}>
+      <div className="footer px-12 text-white">
         <div>
           <span className="footer-title">Services</span>
           <a className="link link-hover">Branding</a>
@@ -32,10 +42,10 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </div>
       </div>
-      <div className="my-10 text-center">
+      <div className="my-10 text-center text-white">
         <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
       </div>
-    </footer>
+    </animated.footer>
   );
 };
 

@@ -14,7 +14,9 @@ const Contact = () => {
           <h5 className="text-secondary font-bold text-xl text-bold pt-10">
             Contact Us
           </h5>
-          <h2 className="text-3xl text-white">Stay connected with us</h2>
+          <h2 className="text-3xl text-white font-bold">
+            Stay connected with us
+          </h2>
         </div>
         <div>
           <input

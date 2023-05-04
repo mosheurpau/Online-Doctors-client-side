@@ -65,7 +65,9 @@ const DoctorTeam = () => {
 
   return (
     <div className="pb-28">
-      <h2 className="text-center text-5xl font-bold pb-5">Our Creative Team</h2>
+      <h2 className="text-center text-xl md:text-4xl font-bold pb-5">
+        Our Creative Team
+      </h2>
       <div>
         <Swiper
           effect={"coverflow"}
@@ -89,14 +91,16 @@ const DoctorTeam = () => {
         >
           {doctors.map((doctor) => (
             <SwiperSlide>
-              <div className="card lg:max-w-lg bg-base-100 shadow-xl mt-8">
+              <div className="card lg:max-w-lg bg-base-100 shadow-xl mt-8 mb-10">
                 <figure className="px-1 pt-1 pb-0">
                   <img src={doctor.img} alt="Shoes" className="rounded-xl" />
                 </figure>
                 <div className="card-body text-center">
-                  <h2 className="text-2xl font-bold">{doctor.name}</h2>
-                  <p className="text-xl">{doctor.specialties}</p>
-                  <p className="font-bold flex justify-center">
+                  <h2 className="text-1xl md:text-2xl font-bold">
+                    {doctor.name}
+                  </h2>
+                  <p className="text-sm md:text-xl">{doctor.specialties}</p>
+                  <p className="font-bold flex justify-center text-sm md:text-xl">
                     <span className="pt-1 p-1">
                       <MdLocationOn className="text-primary" />
                     </span>
