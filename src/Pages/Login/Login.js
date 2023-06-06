@@ -128,6 +128,9 @@ const Login = () => {
               value="Login"
             />
           </form>
+          <label for="Admin-modal" class="btn modal-button text-white">
+            Four Admin Email And Password
+          </label>
           <p>
             <small>
               New to Doctors Portal?{" "}
@@ -151,6 +154,21 @@ const Login = () => {
           >
             Continue with Google
           </button>
+        </div>
+        <input type="checkbox" id="Admin-modal" class="modal-toggle" />
+        <div class="modal modal-bottom sm:modal-middle">
+          <div class="modal-box">
+            <h3 class="font-bold text-lg">Four Admin Mail And Password!</h3>
+            <p class="py-4">
+              <strong>Admin Email: </strong> bbc@b.com <br />
+              <strong>Password: </strong> 123456
+            </p>
+            <div class="modal-action">
+              <label for="Admin-modal" class="btn">
+                Ok!
+              </label>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -11,7 +11,7 @@ const MobileApp = () => {
       <div className="flex-1 p-5">
         <h3 className="text-xl font-bold mb-5">APPLICATION</h3>
         <h2 className="text-3xl text-white mb-5 font-bold">
-          Download Findoctor App Now!
+          Download Online Doctor App Now!
         </h2>
         <p className="text-white mb-5">
           Tota omittantur necessitatibus mei ei. Quo paulo perfecto eu, errem
