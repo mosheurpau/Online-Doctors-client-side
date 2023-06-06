@@ -11,7 +11,7 @@ const Contact = () => {
         className="text-center"
       >
         <div>
-          <h5 className="text-secondary font-bold text-xl text-bold pt-10">
+          <h5 className="text-secondary font-bold text-xl text-bold py-10">
             Contact Us
           </h5>
           <h2 className="text-3xl text-white font-bold">

@@ -91,12 +91,12 @@ const DoctorTeam = () => {
         >
           {doctors.map((doctor) => (
             <SwiperSlide>
-              <div className="card lg:max-w-lg bg-base-100 shadow-xl mt-8 mb-10">
-                <figure className="px-1 pt-1 pb-0">
+              <div className="card lg:max-w-lg bg-base-100 shadow-lg mt-8 mb-10">
+                <figure className="px-1 pt-1 pb-0 sm:w-auto">
                   <img src={doctor.img} alt="Shoes" className="rounded-xl" />
                 </figure>
-                <div className="card-body text-center">
-                  <h2 className="text-1xl md:text-2xl font-bold">
+                <div className="text-center py-5">
+                  <h2 className="text-sm sm:text-2xl font-bold">
                     {doctor.name}
                   </h2>
                   <p className="text-sm md:text-xl">{doctor.specialties}</p>
@@ -110,22 +110,6 @@ const DoctorTeam = () => {
               </div>
             </SwiperSlide>
           ))}
-          ;
-          {/* <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-          </SwiperSlide> */}
         </Swiper>
       </div>
     </div>
