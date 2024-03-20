@@ -4,7 +4,7 @@ import appleApp from "../../assets/images/apple_app.png";
 import googleApp from "../../assets/images/google_play_app.png";
 const MobileApp = () => {
   return (
-    <section className="flex justify-center items-center bg-gradient-to-r from-secondary to-primary mb-16">
+    <section className="flex justify-center items-center bg-gradient-to-r from-secondary to-primary mb-16 rounded-2xl">
       <div className="flex-1 hidden lg:block">
         <img src={appImg} alt="" />
       </div>

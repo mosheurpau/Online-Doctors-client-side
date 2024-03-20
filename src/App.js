@@ -22,7 +22,7 @@ import Payment from "./Pages/Dashboard/Payment";
 
 function App() {
   return (
-    <div className="max-w-7xl mx-auto px-1">
+    <div className="max-w-screen-2xl mx-auto px-1">
       <Navebar></Navebar>
       <Routes>
         <Route path="/" element={<Home />} />

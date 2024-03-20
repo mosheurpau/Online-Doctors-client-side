@@ -1,16 +1,22 @@
 import { signOut } from "firebase/auth";
-import React from "react";
+import React, { useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import auth from "../../firebase.init";
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to track menu visibility
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen); // Toggle menu visibility
+  };
 
   const logout = () => {
     signOut(auth);
     localStorage.removeItem("accessToken");
   };
+
   const menuItems = (
     <>
       <li>
@@ -44,11 +50,16 @@ const Navbar = () => {
       </li>
     </>
   );
+
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar bg-base-100 max-w-7xl mx-auto px-1">
       <div className="navbar-start mx-auto">
         <div className="dropdown">
-          <label tabIndex="0" className="btn btn-ghost lg:hidden">
+          <label
+            tabIndex="0"
+            className="btn btn-ghost lg:hidden"
+            onClick={toggleMenu}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5"
@@ -66,12 +77,14 @@ const Navbar = () => {
           </label>
           <ul
             tabIndex="0"
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className={`menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 ${
+              isMenuOpen ? "block" : "hidden"
+            }`}
           >
             {menuItems}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
+        <Link to="/" className="normal-case text-xl">
           <img
             className="p-1 m-0 h-12"
             src="https://i.ibb.co/WGcmqkS/online-doctor.png"
@@ -85,8 +98,9 @@ const Navbar = () => {
       <div className="navbar-end">
         <label
           tabIndex="1"
-          for="dashboard-sidebar"
+          htmlFor="dashboard-sidebar"
           className="btn btn-ghost lg:hidden"
+          onClick={toggleMenu}
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

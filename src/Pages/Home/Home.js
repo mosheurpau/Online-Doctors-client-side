@@ -12,15 +12,19 @@ import YoutubeVideo from "./YoutubeVideo";
 
 const Home = () => {
   return (
-    <div>
-      <Banner></Banner>
-      <YoutubeVideo></YoutubeVideo>
-      <Info></Info>
-      <Services></Services>
-      <DoctorTeam></DoctorTeam>
-      <MakeAppointment></MakeAppointment>
-      <Testimonials></Testimonials>
-      <MobileApp></MobileApp>
+    <div className="mx-auto">
+      <div className="max-w-7xl mx-auto px-1">
+        <Banner></Banner>
+        <YoutubeVideo></YoutubeVideo>
+        <Info></Info>
+        <Services></Services>
+        <DoctorTeam></DoctorTeam>
+
+        <MakeAppointment></MakeAppointment>
+
+        <Testimonials></Testimonials>
+        <MobileApp></MobileApp>
+      </div>
       <Contact></Contact>
       <Footer></Footer>
     </div>
