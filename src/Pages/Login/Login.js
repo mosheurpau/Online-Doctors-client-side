@@ -25,16 +25,16 @@ const Login = () => {
   let signInError;
   const navigate = useNavigate();
   const location = useLocation();
-  let from = location.state?.from?.pathname || "/";
+  let from = location.state?.from || { pathname: "/" }; // Default to home if no previous location
 
   useEffect(() => {
     if (token) {
-      navigate(from, { replace: true });
+      navigate(from.pathname, { replace: true }); // Navigate back to previous location
     }
   }, [token, from, navigate]);
 
   if (loading || gLoading) {
-    return <Loading></Loading>;
+    return <Loading />;
   }
 
   if (error || gError) {
@@ -48,7 +48,6 @@ const Login = () => {
   const onSubmit = (data) => {
     signInWithEmailAndPassword(data.email, data.password);
   };
-
   return (
     <div className="flex h-screen justify-center items-center">
       <div className="card w-96 bg-base-100 shadow-xl">

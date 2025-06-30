@@ -5,7 +5,7 @@ import Typewriter from "typewriter-effect";
 
 const Banner = () => {
   return (
-    <div className=" hero min-h-screen bg-[url('/src/assets/images/bg.png')] px-12">
+    <div className=" hero min-h-screen bg-[url('/src/assets/images/bg.png')] px-12 rounded-lg">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div>
           <img
